@@ -23,3 +23,40 @@ graph TD
     D --> E[Groq LLM analysis]
     E --> F[Insights + Summary]
     F --> G[Reply to user via WhatsApp]
+
+```
+---
+## 🚀 Installation & Setup
+
+### Prerequisites
+- Python 3.8 or higher
+- pip (Python package manager)
+- Git
+
+### Step 1: Clone the Repository
+```bash
+git clone https://github.com/21lakshh/Smart-Property-Finder 
+cd Smart Property Finder
+```
+
+### Step 2: Environment Configuration
+Create a `.env` file in the root directory:
+```bash
+FIRECRAWL_API_KEY=""
+GROQ_API_KEY=""
+MY_NUMBER=""
+TOKEN=""
+```
+
+### Step 3: Run the Application
+```bash
+python main.py
+```
+
+The application will be available at `http://0.0.0.0:8085`
+
+### Step 4:Use this command to connect Puch with your mcp server
+```bash
+/mcp connect <SERVER URL (should be publicly accesible)>/mcp <AUTH TOKEN>
+```
+
