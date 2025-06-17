@@ -8,10 +8,14 @@ from fastmcp.server.auth.providers.bearer import BearerAuthProvider, RSAKeyPair
 from mcp.server.auth.provider import AccessToken
 from pydantic import BaseModel
 import logging
+import os
+from dotenv import load_dotenv
 
-TOKEN = "40cc5eafe4bb"
-MY_NUMBER = "917428512005" 
+
 load_dotenv()
+TOKEN = os.getenv("TOKEN")
+MY_NUMBER = os.getenv("MY_NUMBER")
+
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger(__name__)
 
